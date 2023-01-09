@@ -75,13 +75,9 @@
       const controls = document.querySelectorAll('input');
 
       const handleChange = function () {
-        // console.log(this.value);
-
         const controlName = this.name;
 
         const suffix = this.dataset.sizing || '';
-
-        console.log(this.value);
 
         document.documentElement.style.setProperty(
           `--${this.name}`,
