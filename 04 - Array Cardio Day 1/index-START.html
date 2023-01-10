@@ -95,35 +95,65 @@
 
       // Array.prototype.reduce()
       // 4. How many years did all the inventors live all together?
-      // const x = inventors.reduce((acc, sum) => acc.passed + acc.year);
+      // const x = inventors.reduce(
+      //   (total, inventor) => total + (inventor.passed - inventor.year),
+      //   0
+      // );
       // console.log(x);
 
       // 5. Sort the inventors by years lived
 
-      // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
+      // inventors.sort((a, b) =>
+      //   a.passed - a.year > b.passed - b.year ? 1 : -1
+      // );
+      // console.table(inventors);
+
+      // 6. create a list of Boulevards in Paris that contain ,'de' anywhere in the name
       // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
+
+      // const listHead = document.querySelector('.mw-category');
+      // const list = Array.from(listHead.querySelectorAll('a'));
+
+      // const x = list.filter((el) => el.textContent.includes('de'));
+
+      // x.forEach((el) => console.log(el.textContent));
+
+      // .querySelectorAll('a');
 
       // 7. sort Exercise
       // Sort the people alphabetically by last name
 
+      // inventors.sort((a, b) => (a.last > b.last ? 1 : -1));
+      // console.table(inventors);
+
       // 8. Reduce Exercise
       // Sum up the instances of each of these
-      const data = [
-        'car',
-        'car',
-        'truck',
-        'truck',
-        'bike',
-        'walk',
-        'car',
-        'van',
-        'bike',
-        'walk',
-        'car',
-        'van',
-        'car',
-        'truck',
-      ];
+      // const data = [
+      //   'car',
+      //   'car',
+      //   'truck',
+      //   'truck',
+      //   'bike',
+      //   'walk',
+      //   'car',
+      //   'van',
+      //   'bike',
+      //   'walk',
+      //   'car',
+      //   'van',
+      //   'car',
+      //   'truck',
+      // ];
+
+      // const final = data.reduce((obj, item) => {
+      //   if (!obj[item]) {
+      //     obj[item] = 0;
+      //   }
+      //   obj[item]++;
+      //   return obj;
+      // }, {});
+
+      // console.log(final);
     </script>
   </body>
 </html>
